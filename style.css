@@ -1,3 +1,9 @@
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
@@ -11,6 +17,99 @@ body {
 body {
   background-color: #d91656;
 }
+
+#keyBox,
+#scoreBox {
+  position: absolute;
+  left: 3rem;
+  bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: fit-content;
+  width: fit-content;
+}
+#scoreBox {
+  background-image: url(./img/scoreboard.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 10rem;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#highscore {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  bottom: -5%;
+  border-radius: 20px;
+  background-color: #a04747;
+}
+#trophy {
+  background-image: url(./img/trophy.png);
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  height: 80px;
+  width: 80px;
+  transform: rotate(10deg);
+}
+#previousHighscore {
+  color: aliceblue;
+  font-family: "Gamja Flower";
+  font-size: 1.5rem;
+  position: relative;
+  left: -1rem;
+}
+.key {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+.row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 5px;
+}
+#w {
+  position: relative;
+  left: 55px;
+  background-image: url(./img/w.png);
+}
+#wc {
+  position: relative;
+  left: 55px;
+  background-image: url(./img/wc.png);
+}
+#a {
+  background-image: url(./img/a.png);
+}
+#ac {
+  background-image: url(./img/ac.png);
+}
+#s {
+  background-image: url(./img/s.png);
+}
+#sc {
+  background-image: url(./img/sc.png);
+}
+#d {
+  background-image: url(./img/d.png);
+}
+#dc {
+  background-image: url(./img/dc.png);
+}
+
 #playArea {
   width: 1020px;
   height: 600px;

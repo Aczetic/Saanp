@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="scoreBox">
+      <div id="highscore">
+        <div id="previousHighscore">100</div>
+        <div id="trophy"></div>
+      </div>
+    </div>
+    <div id="keyBox">
+      <div class="row">
+        <div class="key" id="w"></div>
+      </div>
+      <div class="row">
+        <div class="key" id="a"></div>
+        <div class="key" id="s"></div>
+        <div class="key" id="d"></div>
+      </div>
+    </div>
     <div id="playArea">
       <div id="head" class="body"></div>
       <div id="foodbox"><div id="food"></div></div>
     </div>
-    <script type="module" lang="javascript" src="script.js"></script>
+    <script
+      type="module"
+      lang="javascript"
+      src="script.js"
+      size="32x32"
+    ></script>
   </body>
 </html>

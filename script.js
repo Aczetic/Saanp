@@ -14,7 +14,16 @@ document.addEventListener("keydown", () => {
       break;
     case "d":
       direction = "r";
+      break;
   }
+  document.querySelector(
+    `#${event.key}`
+  ).style.backgroundImage = `url(img/${event.key}c.png)`;
+});
+document.addEventListener("keyup", () => {
+  document.querySelector(
+    `#${event.key}`
+  ).style.backgroundImage = `url(img/${event.key}.png)`;
 });
 
 let head = document.querySelector("#head");
@@ -24,7 +33,7 @@ let x,
   y,
   len = 2;
 let { X, Y } = foodSpawner(0, 0);
-x = y = 0;
+x = y = 60;
 let locs = [[0, 0]];
 
 const mover = setInterval(() => {
